@@ -23,7 +23,10 @@ Route::prefix('v1')->group(function () {
     // You can include other files or define more routes here...
     // Collletions ...
 
-    Route::post('append_ln',[ColletionColtroller::class,'workWithColletiions']);
+    Route::post('users',[ColletionColtroller::class,'insertUser']);
+    Route::get('users-get',[ColletionColtroller::class,'getUsers']);
+    Route::post('users-edit',[ColletionColtroller::class,'editUser']);
+    Route::delete('users-delete/{id}',[ColletionColtroller::class,'deleteUser']);
     // ...
 });
 
