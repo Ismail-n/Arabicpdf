@@ -20,6 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::prefix('v1')->group(function () {
     require __DIR__.'/api/v1/category.php';
+    require __DIR__.'/api/v1/hospitalmanagement.php';
     // You can include other files or define more routes here...
     // Collletions ...
 
